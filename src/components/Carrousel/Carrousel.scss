@@ -1,0 +1,29 @@
+#carrousel-container {
+    // width: 60%;
+    // height: 100%;
+    // display: flex;
+    // flex-direction: column;
+    // align-items: center;
+    // justify-content: center;
+    .img-carr {
+    
+        height: 100%;
+        width: auto;
+        margin-left: 20px;
+      
+        }
+      
+        
+        
+}
+.prueba{
+    
+    width: auto;
+    height: 100%;
+
+    @media  screen and  (min-width: 1080px) {
+        display: none;
+       
+    }
+}
+

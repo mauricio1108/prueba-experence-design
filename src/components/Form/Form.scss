@@ -1,0 +1,130 @@
+#form-container {
+ 
+    width: 70%;
+    height: 100%;
+    margin: 1rem auto;
+    display: flex;
+    padding: 2rem 1rem;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    #form {
+        width: 100%;
+        display: flex;
+        row-gap: 20px;
+        column-gap: 10px;
+        flex-direction: column;
+        margin-bottom: 10px;
+        color: #475467;
+        
+        .each-inp {
+            position: relative;
+            label {
+                font-size: 15px;
+                font-weight: 600;
+            }
+            .login-inp {
+                width: 95%;
+                height: 24px;
+                border-radius: 10px;
+                margin-top: 10px;
+                border: 1px solid #D0D5DD;
+                outline: none;
+                padding: 10px;
+                font-size: 18px;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                &::placeholder {
+                    font-size: 18px;
+                }
+            }
+            .pass-cont {
+                width: 95%;
+                position: relative;
+                display: flex;
+                flex-direction: row;
+                border: 1px solid #D0D5DD;
+                padding: 10px;
+                justify-content: center;
+                align-items: center;
+                border-radius: 10px;
+            
+                input {
+                    width: 100%;
+                    border: 0;
+                    outline: none;
+                    padding: 0;
+                    margin: 0;
+                }
+                .passIconButton {
+                    width: 15px;
+                    height: 15px;
+                   
+                    padding: 0;
+                    border: none;
+                    background: transparent;
+                    &:hover {
+                        cursor: pointer;
+                    }
+                    .passIcon {
+                        width: 100%;
+                        height: 100%;
+                    }
+                }
+            }
+        }
+        .valid-checks {
+            display: flex;
+            flex-direction: column;
+            row-gap: 10px;
+            .each-check {
+                display: flex;
+                column-gap: 10px;
+                .check {
+                    width: 20px;
+                }
+                p {
+                    margin: 0;
+                    font-size: 15px;
+                    font-weight: 400;
+                }
+            }
+        }
+        .create-button {
+            width: 100%;
+            height: 40px;
+            padding: 15px;
+            border: none;
+            border-radius: 10px;
+            color: #fff;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            background: #0C111D;
+            transition: all .3s ease;
+            &:hover {
+                cursor: pointer;
+                background: #a348ce;
+                transition: all .3s ease;
+                box-shadow: 1px 1px 5px #080c14;
+            }
+        }
+        .have-account {
+            width: 100%;
+            text-align: center;
+            font-weight: 400;
+            font-size: 14px;
+            margin: 0;
+            .log-in {
+                font-weight: 600;
+                transition: all .2s ease;
+                &:hover {
+                    cursor: pointer;
+                    color: #5778aa;
+                    transition: all .2s ease;
+                }
+            }
+        }
+    }
+}
